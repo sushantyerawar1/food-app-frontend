@@ -25,7 +25,7 @@ const HomePageUser = () => {
     const navigate = useNavigate();
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
     const hotelid = JSON.parse(localStorage.getItem('hotelid'));
-    const [mobilenumber, setMobileNumber] = useState(9745683934)
+    const [mobilenumber, setMobileNumber] = useState(8758940890);
     const keys = ["userName"]
     const description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. PageMaker including versions of Lorem Ipsum"
     // const initialHotels = [
@@ -85,7 +85,7 @@ const HomePageUser = () => {
                 config
             );
 
-            // console.log(data.hotels, "hotelsssssssssssss")
+            console.log(data.hotels, "hotelsssssssssssss")
             if (status == 200) {
                 // setOriginalHotels(data.hotels)
                 // setHotels(data.hotels);
@@ -271,17 +271,6 @@ const HomePageUser = () => {
                                                             </Box>
                                                         </Box>
 
-                                                        <Box
-                                                            mt='1'
-                                                            fontWeight='semibold'
-                                                            as='h4'
-                                                            lineHeight='tight'
-                                                            noOfLines={5}
-                                                            color="teal.500"
-                                                        >
-                                                            Mobile Number: {mobilenumber}
-                                                            {/* {hotel?.mobilenumber} */}
-                                                        </Box>
 
                                                         <Box
                                                             mt='1'
@@ -294,6 +283,17 @@ const HomePageUser = () => {
                                                             {/* {hotel?.description} */}
                                                         </Box>
 
+                                                        <Box
+                                                            mt='1'
+                                                            fontWeight='semibold'
+                                                            as='h4'
+                                                            lineHeight='tight'
+                                                            noOfLines={5}
+                                                            color="teal.500"
+                                                        >
+                                                            Mobile Number: {hotel?.mobilenumber ? hotel?.mobilenumber : mobilenumber}
+                                                            {/* {hotel?.mobilenumber} */}
+                                                        </Box>
 
                                                         <Box display='flex' mt='2' alignItems='center'>
                                                             {Array(5)
@@ -308,6 +308,7 @@ const HomePageUser = () => {
                                                             {item?.reviews.length} reviews
                                                         </Box> */}
                                                         </Box>
+
 
                                                     </Box>
                                                 </Box>
