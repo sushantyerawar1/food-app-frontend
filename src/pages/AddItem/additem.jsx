@@ -62,7 +62,7 @@ const AddItem = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/items/additem",
+                "https://iitbh-campus-delivery.onrender.com/api/items/additem",
                 {
                     "name": item.name,
                     "hotelId": user._id,

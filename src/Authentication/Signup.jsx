@@ -83,7 +83,7 @@ const SignUp = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/auth/signup",
+                "https://iitbh-campus-delivery.onrender.com/api/auth/signup",
                 {
                     "userName": username,
                     "emailId": email,
@@ -212,7 +212,7 @@ const SignUp = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/auth/signup",
+                "https://iitbh-campus-delivery.onrender.com/api/auth/signup",
                 {
                     "userName": username,
                     "emailId": email,

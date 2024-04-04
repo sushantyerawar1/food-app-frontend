@@ -92,7 +92,7 @@ const NewOrders = () => {
                 };
 
                 const { data, status } = await axios.post(
-                    "http://localhost:5000/api/orders/acceptOrder",
+                    "https://iitbh-campus-delivery.onrender.com/api/orders/acceptOrder",
                     {
                         "orderId": orderId,
                         "email": email
@@ -121,7 +121,7 @@ const NewOrders = () => {
                 };
 
                 const { data, status } = await axios.post(
-                    "http://localhost:5000/api/orders/rejectOrder",
+                    "https://iitbh-campus-delivery.onrender.com/api/orders/rejectOrder",
                     {
                         "orderId": orderId,
                         "email": email
@@ -164,7 +164,7 @@ const NewOrders = () => {
             };
 
             const { data, status } = await axios.post(
-                `http://localhost:5000/api/orders/getOrderByHotel`,
+                `https://iitbh-campus-delivery.onrender.com/api/orders/getOrderByHotel`,
                 {
                     hotelId: user._id
                 },
@@ -243,7 +243,7 @@ const NewOrders = () => {
             };
 
             const { data, status } = await axios.post(
-                `http://localhost:5000/api/groupOrders/gethotelgrouporders`,
+                `https://iitbh-campus-delivery.onrender.com/api/groupOrders/gethotelgrouporders`,
                 {
                     hotelId: user._id
                 },
@@ -296,7 +296,7 @@ const NewOrders = () => {
                 };
 
                 const { data, status } = await axios.post(
-                    "http://localhost:5000/api/groupOrders/acceptGroupOrder",
+                    "https://iitbh-campus-delivery.onrender.com/api/groupOrders/acceptGroupOrder",
                     {
                         "groupId": groupId,
                         "email": email
@@ -325,7 +325,7 @@ const NewOrders = () => {
                 };
 
                 const { data, status } = await axios.post(
-                    "http://localhost:5000/api/groupOrders/rejectGroupOrder",
+                    "https://iitbh-campus-delivery.onrender.com/api/groupOrders/rejectGroupOrder",
                     {
                         "groupId": groupId,
                         "email": email

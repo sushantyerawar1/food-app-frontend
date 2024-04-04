@@ -83,7 +83,7 @@ const Login = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/auth/login",
+                "https://iitbh-campus-delivery.onrender.com/api/auth/login",
                 {
                     "emailId": email,
                     "password": password,
@@ -194,7 +194,7 @@ const Login = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/auth/login",
+                "https://iitbh-campus-delivery.onrender.com/api/auth/login",
                 {
                     "emailId": email,
                     "password": password,
@@ -288,7 +288,7 @@ const Login = () => {
             };
 
             const { data } = await axios.post(
-                "http://localhost:5000/api/auth/forgot-password",
+                "https://iitbh-campus-delivery.onrender.com/api/auth/forgot-password",
                 {
                     "emailId": forgotemail,
                 },

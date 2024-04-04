@@ -35,7 +35,7 @@ const VerifyEmailOnAccountCreation = () => {
             };
 
             const { data } = await axios.post(
-                `http://localhost:5000/api/auth/verifynewemail/${params.id}/${params.token}`,
+                `https://iitbh-campus-delivery.onrender.com/api/auth/verifynewemail/${params.id}/${params.token}`,
                 {
                     "id": params.id,
                 },

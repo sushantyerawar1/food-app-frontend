@@ -83,7 +83,7 @@ const Catalog = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/items/getitems", {
+                "https://iitbh-campus-delivery.onrender.com/api/items/getitems", {
                 id: hotelid
             },
                 config
@@ -120,7 +120,7 @@ const Catalog = () => {
             };
 
             const { data } = await axios.post(
-                "http://localhost:5000/api/v1/cart/add",
+                "https://iitbh-campus-delivery.onrender.com/api/v1/cart/add",
                 {
                     "hotelID": hotelid,
                     "item": item,

@@ -114,7 +114,7 @@ const RejectedOrders = () => {
             };
 
             const { data, status } = await axios.post(
-                `http://localhost:5000/api/orders/getOrderByHotel`,
+                `https://iitbh-campus-delivery.onrender.com/api/orders/getOrderByHotel`,
                 {
                     hotelId: user._id
                 },
@@ -190,7 +190,7 @@ const RejectedOrders = () => {
             };
 
             const { data, status } = await axios.post(
-                `http://localhost:5000/api/groupOrders/gethotelgrouporders`,
+                `https://iitbh-campus-delivery.onrender.com/api/groupOrders/gethotelgrouporders`,
                 {
                     hotelId: user._id
                 },
