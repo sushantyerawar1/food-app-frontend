@@ -63,7 +63,7 @@ const UserProfile = () => {
                 };
 
                 const { data, status } = await axios.post(
-                    "http://localhost:5000/api/auth/userinfo",
+                    "https://iitbh-campus-delivery.onrender.com/api/auth/userinfo",
                     {
                         "id": userId
                     },
@@ -150,7 +150,7 @@ const UserProfile = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/auth/edituserinfo",
+                "https://iitbh-campus-delivery.onrender.com/api/auth/edituserinfo",
                 {
                     "id": userId,
                     "userName": userName,

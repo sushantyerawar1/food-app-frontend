@@ -71,7 +71,7 @@ const HotelItems = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/items/getitems",
+                "https://iitbh-campus-delivery.onrender.com/api/items/getitems",
                 {
                     id: user._id
                 },
@@ -176,7 +176,7 @@ const HotelItems = () => {
                 };
 
                 const { data, status } = await axios.post(
-                    "http://localhost:5000/api/items/updateitem",
+                    "https://iitbh-campus-delivery.onrender.com/api/items/updateitem",
                     {
                         "_id": selectedItem._id,
                         "name": selectedItem.name,
@@ -227,7 +227,7 @@ const HotelItems = () => {
                 };
 
                 const { data, status } = await axios.post(
-                    "http://localhost:5000/api/items/deleteitem",
+                    "https://iitbh-campus-delivery.onrender.com/api/items/deleteitem",
                     {
                         "itemId": itemId
                     },

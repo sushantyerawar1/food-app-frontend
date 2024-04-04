@@ -71,7 +71,7 @@ const UserOrders = () => {
             };
 
             const { data, status } = await axios.post(
-                `http://localhost:5000/api/orders/getOrderByUser`,
+                `https://iitbh-campus-delivery.onrender.com/api/orders/getOrderByUser`,
                 {
                     userId: user._id
                 },
@@ -137,7 +137,7 @@ const UserOrders = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/groupOrders/getusergrouporders",
+                "https://iitbh-campus-delivery.onrender.com/api/groupOrders/getusergrouporders",
                 {
                     "userId": user._id,
                 },

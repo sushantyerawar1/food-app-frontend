@@ -127,7 +127,7 @@ const ContactUs = () => {
             };
 
             const { data, status } = await axios.post(
-                "http://localhost:5000/api/contact/contact-us",
+                "https://iitbh-campus-delivery.onrender.com/api/contact/contact-us",
                 {
                     "name": name,
                     "email": email,
