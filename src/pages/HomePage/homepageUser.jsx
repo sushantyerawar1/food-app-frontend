@@ -22,6 +22,7 @@ import FoodBackgroundImage from '../../img4.jpg';
 const HomePageUser = () => {
 
 
+
     const navigate = useNavigate();
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
     const hotelid = JSON.parse(localStorage.getItem('hotelid'));
